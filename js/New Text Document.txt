@@ -1,0 +1,128 @@
+  if(player === 'Player One'){
+    if(moveOneType !== undefined || moveOneType !== null)
+      playerOneMoveOneType = moveOneType;
+    if(moveOneValue !== undefined || moveOneValue !== null)
+      playerOneMoveOneValue = moveOneValue;
+    if(moveTwoType !== undefined)
+      playerOneMoveTwoType = moveTwoType;
+    if(moveTwoValue !== undefined)
+      playerOneMoveTwoValue = moveTwoValue;
+    if(moveThreeType !== undefined)
+      playerOneMoveThreeType = moveThreeType;
+    if(moveThreeValue !== undefined)
+      playerOneMoveThreeValue = moveThreeValue;
+  }
+  if(player === 'Player Two'){
+    if(moveOneType !== undefined)
+      playerTwoMoveOneType = moveOneType;
+    if(moveOneValue !== undefined)
+      playerTwoMoveOneValue = moveOneValue;
+    if(moveTwoType !== undefined)
+      playerTwoMoveTwoType = moveTwoType;
+    if(moveTwoValue !== undefined)
+      playerTwoMoveTwoValue = moveTwoValue;
+    if(moveThreeType !== undefined)
+      playerTwoMoveThreeType = moveThreeType;
+    if(moveThreeValue !== undefined)
+      playerTwoMoveThreeValue = moveThreeValue;
+  }
+
+
+/*
+function getRoundWinner (roundNumber){
+  let winner = undefined;
+  switch (roundNumber) {
+    case 1:
+      winner = evaluateMoves(playerOneMoveOneType, playerTwoMoveOneType);
+      break;
+    case 2:
+      winner = evaluateMoves(playerOneMoveTwoType, playerTwoMoveTwoType);
+      break;
+    case 3:
+      winner = evaluateMoves(playerOneMoveThreeType, playerTwoMoveThreeType);
+      break;
+      default:
+       return null;
+  }
+  return winner;
+};
+
+function evaluateMoves(move1, move2, value1, value2){
+  switch (move1) {
+    case 'rock':
+      switch (move2) {
+        case 'rock':
+            return evaluateValues(value1, value2);
+            break;
+        case 'paper':
+            return 'Player Two';
+            break;
+        case 'scissors':
+            return 'Player One';
+            break;
+      }
+      break;
+    case 'paper':
+      switch (move2) {
+        case 'rock':
+            return 'Player One';
+            break;
+        case 'paper':
+            return evaluateValues(value1, value2);
+            break;
+        case 'scissors':
+            return 'Player Two';
+            break;
+        }
+      break;
+    case 'scissors':
+      switch (move2) {
+        case 'rock':
+            return 'Player Two';
+            break;
+        case 'paper':
+            return 'Player One';
+            break;
+        case 'scissors':
+            return evaluateValues(value1, value2);
+            break;
+        }
+      break;
+  }
+}
+
+function evaluateValues(value1, value2){
+  if(value1 > value2){
+    return 'Player One';
+  }
+  else if(value1 < value2){
+      return 'Player Two';
+    }
+  else if(value1 === value2){
+      return 'Tie';
+  }
+}
+
+function setComputerMoves(remainingStrength){
+    const computerPick = Math.floor(Math.random()*3);
+    let randomMove;
+    let randomValue;
+
+    switch (computerPick) {
+      case 1:
+        randomMove = 'rock';
+        break;
+      case 2:
+        randomMove = 'paper';
+        break;
+      case 3:
+        randomMove = 'scissors';
+        break;
+    }
+    randomValue = assignMoveValue();
+};
+
+function assignMoveValue(){
+  return Math.floor(Math.random() * 99);
+}
+*/
